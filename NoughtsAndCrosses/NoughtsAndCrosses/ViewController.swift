@@ -46,7 +46,10 @@ class ViewController: UIViewController {
         if (game.state() != OXGameState.complete)   {
             let move = game.playMove(sender.tag)
             print (game.state())
-            sender.setTitle("\(move)", forState: UIControlState.Normal)
+            if let moveToPrint = move   {
+                sender.setTitle("\(moveToPrint)", forState: UIControlState.Normal)
+            }
+            
         }
         
         
