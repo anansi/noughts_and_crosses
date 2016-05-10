@@ -38,14 +38,19 @@ public enum OXGameState : String {
 
 class XOGame    {
     
+    //the type of O or X that plays first
     private var startType:type = type.X
+    //the board data, stored in a 1D array
     private var board = [type](count: 9, repeatedValue: type.EMPTY)
     
+    
+    //returns the number of turns the players have had on the board
     private func turn() -> Int {
         print(board.filter{(pos) in (pos != type.EMPTY)}.count)
         return board.filter{(pos) in (pos != type.EMPTY)}.count
     }
     
+    //returns if its X or O's turn to play
     func whosTurn()  -> type {
         let count = turn()
         if (count % 2 == 0)   {
@@ -61,6 +66,7 @@ class XOGame    {
         
     }
     
+    //the current state of the game
     func state() -> OXGameState    {
         if (turn() == 0)   {
             return OXGameState.hasntStarted
@@ -71,16 +77,20 @@ class XOGame    {
         }
     }
     
+    //one of the later functions created
     func playMove(position:Int) -> type? {
         board[position] = whosTurn()
         return board[position]
     }
     
+    //restart the game
     func reset()    {
         board = [type](count: 9, repeatedValue: type.EMPTY)
     }
 }
 
+
+//This class/stuff comes later
 class XOGameController  {
     
     

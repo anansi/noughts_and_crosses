@@ -42,55 +42,55 @@
                                 <rect key="frame" x="10" y="79" width="580" height="470"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVc-Zo-LDg">
-                                        <rect key="frame" x="0.0" y="0.0" width="193" height="157"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cH-jM-24p"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfL-hG-5GI">
-                                        <rect key="frame" x="193" y="0.0" width="193" height="157"/>
+                                        <rect key="frame" x="193" y="0.0" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCV-m0-hCT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-fp-OlD">
-                                        <rect key="frame" x="387" y="0.0" width="193" height="157"/>
+                                        <rect key="frame" x="387" y="0.0" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANE-oq-oS7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMD-Fr-KNM">
-                                        <rect key="frame" x="0.0" y="157" width="193" height="156"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="193" height="156"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46p-ek-Lvo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tp-VS-x59">
-                                        <rect key="frame" x="193" y="157" width="193" height="156"/>
+                                        <rect key="frame" x="193" y="156.5" width="193" height="156"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLo-lo-jl4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db6-N6-dlR">
-                                        <rect key="frame" x="387" y="157" width="193" height="156"/>
+                                        <rect key="frame" x="387" y="156.5" width="193" height="156"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bzs-Uh-2qn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-vl-Uz4">
-                                        <rect key="frame" x="-1" y="314" width="193" height="156"/>
+                                        <rect key="frame" x="-1" y="313.5" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ruf-OM-ACa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-g3-PDT">
-                                        <rect key="frame" x="192" y="314" width="193" height="156"/>
+                                        <rect key="frame" x="192" y="313.5" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I46-2i-k5a"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12I-FQ-j4u">
-                                        <rect key="frame" x="386" y="314" width="193" height="156"/>
+                                        <rect key="frame" x="386" y="313.5" width="193" height="156.5"/>
                                         <connections>
                                             <action selector="boardWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbB-eP-X2e"/>
                                         </connections>
