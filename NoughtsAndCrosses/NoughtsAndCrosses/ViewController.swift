@@ -43,13 +43,20 @@ class ViewController: UIViewController {
 
     @IBAction func boardWasTapped(sender: UIButton) {
         
-        if (game.state() != OXGameState.complete)   {
+        print (game.state())
+        
+        if (game.state() == OXGameState.inProgress)   {
+            //lets execute the move
             let move = game.playMove(sender.tag)
-            print (game.state())
+            
             if let moveToPrint = move   {
                 sender.setTitle("\(moveToPrint)", forState: UIControlState.Normal)
             }
             
+        }   else if (game.state() == OXGameState.complete_someone_won)  {
+            
+            let winner = game.whosTurn()
+            print ("\(winner) won the game")
         }
         
         

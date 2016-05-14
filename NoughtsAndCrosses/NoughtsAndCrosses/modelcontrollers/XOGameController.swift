@@ -30,9 +30,9 @@ public enum type : String {
 }
 
 public enum OXGameState : String {
-    case hasntStarted
     case inProgress
-    case complete
+    case complete_no_one_won
+    case complete_someone_won
     
 }
 
@@ -69,15 +69,28 @@ class XOGame    {
     //the current state of the game
     func state() -> OXGameState    {
         if (turn() == 0)   {
-            return OXGameState.hasntStarted
-        }   else if (turn() < 9)  {
             return OXGameState.inProgress
+        }   else if (turn() < 9)  {
+            
+            //check if someone won on this turn
+            let win = winDetection()
+            
+            //if noone won, game is still in progress
+            if (win)   {
+                return OXGameState.complete_someone_won
+            }   else    {
+                return OXGameState.inProgress
+            }
+            
+            
+            
         }   else    {
-            return OXGameState.complete
+            return OXGameState.complete_no_one_won
         }
     }
     
-    //one of the later functions created
+    //one of the later functions created in the demo
+    //execute the move in the game
     func playMove(position:Int) -> type? {
         board[position] = whosTurn()
         return board[position]
@@ -86,6 +99,10 @@ class XOGame    {
     //restart the game
     func reset()    {
         board = [type](count: 9, repeatedValue: type.EMPTY)
+    }
+    
+    func winDetection() -> Bool {
+        return false
     }
 }
 
