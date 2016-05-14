@@ -43,9 +43,10 @@ class ViewController: UIViewController {
 
     @IBAction func boardWasTapped(sender: UIButton) {
         
-        print (game.state())
         
-        if (game.state() == OXGameState.inProgress)   {
+        let state = game.state()
+        print (state)
+        if (state == OXGameState.inProgress)   {
             //lets execute the move
             let move = game.playMove(sender.tag)
             
@@ -53,10 +54,16 @@ class ViewController: UIViewController {
                 sender.setTitle("\(moveToPrint)", forState: UIControlState.Normal)
             }
             
-        }   else if (game.state() == OXGameState.complete_someone_won)  {
+        }   else if (state == OXGameState.complete_someone_won)  {
             
             let winner = game.whosTurn()
-            print ("\(winner) won the game")
+            let message = "\(winner) won the game"
+            let alert = UIAlertController(title: "Game Over", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(action) in
+                     self.restartGame()
+                }
+                ))
         }
         
         
@@ -64,6 +71,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newGameTapped(sender: UIButton) {
+        
+        self.restartGame()
+        
+    }
+    
+    //
+    func restartGame()  {
+        
         //reset model
         game.reset()
         //reset UI
