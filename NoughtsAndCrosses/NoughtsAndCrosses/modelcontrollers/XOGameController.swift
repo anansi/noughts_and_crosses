@@ -102,7 +102,7 @@ class XOGame    {
     }
     
     func winDetection() -> Bool {
-        return false
+        return true
     }
 }
 
